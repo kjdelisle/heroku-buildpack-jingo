@@ -8,6 +8,6 @@ echo "		Attempting to clone document repository:"
 echo "		Git repository: $SECRET_REPO_PATH"
 echo "		Local directory path: $1/docs"
 git clone $SECRET_REPO_PATH $1/docs
-git remote add origin $SECRET_REPO_PATH
+# git remote add origin $SECRET_REPO_PATH
 echo "		Success!"
 exit 0
