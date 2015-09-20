@@ -1,1 +1,2 @@
 echo 'jingo-custom-buildpack'
+exit 0

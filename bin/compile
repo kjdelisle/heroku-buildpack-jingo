@@ -1,1 +1,1 @@
-git clone $SECRET_REPO_PATH docs
+git clone "$SECRET_REPO_PATH" "$1/docs"
