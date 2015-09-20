@@ -1,6 +1,6 @@
 
 env_dir=$3
-for e in ($ls $env_dir); do
+for e in $(ls $env_dir); do
 	echo "VARIABLE: $e"
 	echo "VALUE: $(cat $env_dir/$e)"
 done 
