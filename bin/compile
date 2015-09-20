@@ -6,7 +6,7 @@ done
 echo "-----> Jingo Markdown Wiki Repository Buildpack"
 echo "		Attempting to clone document repository:"
 echo "		Git repository: $SECRET_REPO_PATH"
-echo "		Local directory path: $1/tmp/docs"
-git clone $SECRET_REPO_PATH $1/tmp/docs
+echo "		Local directory path: $1/docs"
+git clone $SECRET_REPO_PATH $1/docs
 echo "		Success!"
 exit 0
