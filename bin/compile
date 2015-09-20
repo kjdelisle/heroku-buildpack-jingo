@@ -11,8 +11,7 @@ export_env_dir() {
   fi
 }
 
-export_env_dir() # Thanks, Heroku Team!
-
+export_env_dir
 echo "-----> Jingo Markdown Wiki Repository Buildpack"
 echo "		Attempting to clone document repository:"
 echo "		Git repository: $SECRET_REPO_PATH"
