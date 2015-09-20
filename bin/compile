@@ -1,8 +1,7 @@
-
+# Get all vars
 env_dir=$3
 for e in $(ls $env_dir); do
-	echo "VARIABLE: $e"
-	echo "VALUE: $(cat $env_dir/$e)"
+	export "$e=$(cat $env_dir/$e)"
 done 
 echo "-----> Jingo Markdown Wiki Repository Buildpack"
 echo "		Attempting to clone document repository:"
