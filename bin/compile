@@ -1,9 +1,9 @@
-echo "------> Jingo Markdown Wiki Repository Buildpack"
-echo "Attempting to clone document repository:"
-env_dir="$3/$SECRET_REPO_PATH"
-echo "Git repository: $env_dir"
+echo "-----> Jingo Markdown Wiki Repository Buildpack"
+echo "		Attempting to clone document repository:"
+env_dir=$(cat $3/$SECRET_REPO_PATH)
+echo "		Git repository: $env_dir"
 
-echo "Local directory path: $1/docs"
+echo "		Local directory path: $1/docs"
 git clone $env_dir $1/docs
-echo "Success!"
+echo "		Success!"
 exit 0
